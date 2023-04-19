@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://unpkg.com/@fortawesome/fontawesome-free@5.15.4/css/all.min.css');
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    font-family: Roboto;
+}
+
+body {
+    margin: 0;
+    background: rgb(23,23,23);
+background: linear-gradient(178deg, rgba(23,23,23,1) 0%, rgba(13,13,13,1) 99%);
+    flex-direction: column;
+    min-height: 100vh;
+    animation: fadeInAnimation ease-in-out 1.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fa-magnifying-glass {
+    color: black;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.logo {
+    width: 200px;
+}
+
+.logo-wrapper .text {
+    font-size: 75px;
+    font-family: "Roboto";
+    color: #2f2f2f;
+    background: -webkit-linear-gradient(90deg, rgba(27,197,250,1) 16%, rgba(82,149,241,1) 32%, rgba(128,111,234,1) 48%, rgba(175,69,225,1) 64%, rgba(244,9,214,1) 80%, rgba(220,31,218,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-wrapper h1 {
+    color: white;
+    background: -webkit-linear-gradient(90deg, rgba(27,197,250,1) 16%, rgba(82,149,241,1) 32%, rgba(128,111,234,1) 48%, rgba(175,69,225,1) 64%, rgba(244,9,214,1) 80%, rgba(220,31,218,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    margin-top: auto;
+    width: 93%;
+    align-self: center;
+    height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+footer a,
+footer span {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #FFF;
+    background: -webkit-linear-gradient(90deg, rgba(27,197,250,1) 16%, rgba(82,149,241,1) 32%, rgba(128,111,234,1) 48%, rgba(175,69,225,1) 64%, rgba(244,9,214,1) 80%, rgba(220,31,218,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 15px;
+}
+
+footer a {
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+}
+
+.desc p {
+    width: 560px;
+    color: #000;
+background: -webkit-linear-gradient(90deg, rgba(27,197,250,1) 16%, rgba(82,149,241,1) 32%, rgba(128,111,234,1) 48%, rgba(175,69,225,1) 64%, rgba(244,9,214,1) 80%, rgba(220,31,218,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form input {
+    background: -webkit-linear-gradient(90deg, rgba(27,197,250,1) 16%, rgba(82,149,241,1) 32%, rgba(128,111,234,1) 48%, rgba(175,69,225,1) 64%, rgba(244,9,214,1) 80%, rgba(220,31,218,1) 100%);
+    font-family: inherit;
+    padding: 0px 17px;
+    height: 48px;
+    border: 1px solid rgb(255, 255, 255, .2);
+    color: var(--text-color);
+    border-radius: 3px;
+    outline: none;
+    width: 350px;
+    margin-top: 5px;
+    border-radius: 50px;
+    color: #000;
+}
+
+::placeholder {
+  color: black;
+  opacity: 5;
+
+form input:focus {
+    border: 1px solid rgba(253, 253, 253, 0.514);
+    border-radius: 6px;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
