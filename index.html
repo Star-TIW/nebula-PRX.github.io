@@ -14,6 +14,16 @@
 
 
     <script type="application/ld+json">
+     />
+    <meta name="googlebot" content="index, follow, snippet" />
+    <link rel="shortcut icon" content="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+    <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "FAQPage",
@@ -54,7 +64,18 @@
         <p>𝙉𝙚𝙗𝙪𝙡𝙖 𝙂𝙖𝙢𝙚𝙯 𝙝𝙖𝙨 𝙖 𝙫𝙖𝙨𝙩 𝙫𝙖𝙧𝙞𝙚𝙩𝙮 𝙤𝙛 𝙥𝙧𝙤𝙭𝙞𝙚𝙨 𝙩𝙝𝙖𝙩 𝙘𝙖𝙣 𝙪𝙣𝙗𝙡𝙤𝙘𝙠 𝙟𝙪𝙨𝙩 𝙖𝙗𝙤𝙪𝙩 𝙖𝙣𝙮𝙩𝙝𝙞𝙣𝙜!
     </div>
     <form>
-        <input placeholder="Enter Web link">
+       <form id="uv-form" class="flex-center">
+      <input
+        id="uv-search-engine"
+        value="https://www.google.com/search?q=%s"
+        type="hidden"
+      />
+      <input id="uv-address" type="text" placeholder="Do it ;)" />
+    </form>
+    <div class="desc left-margin">
+      <p id="uv-error"></p>
+      <pre id="uv-error-code"></pre>
+    </div>
     </form>
     <footer>
         <a title="Made using Ultraviolet and altered by Nebula-Gamez" href="https://github.com/Nebula-Gamez">Nebula-Gamez</a>
